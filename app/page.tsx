@@ -45,7 +45,7 @@ export default function PortfolioWebsite() {
     {
       title: "Informal Healthcare in Nigeria: Filling Gaps in a Strained System",
       type: "Article",
-      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.png", 
+      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.webp", 
       summary:
         "Explores how informal providers (e.g., drug vendors, TBAs) function as a parallel care system due to gaps in primary healthcare access. Highlights the trade-off between accessibility and quality, and the need for structured integration into formal health systems.",
       link: "https://insights.techcabal.com/informal-healthcare-in-nigeria-filling-gaps-in-a-fragile-system/", // Replace with actual article URL
@@ -53,7 +53,7 @@ export default function PortfolioWebsite() {
     {
       title: "How Gaps in Medical Training May Contribute to Nigeria’s Brain Drain",
       type: "Article",
-      image: "https://insights.techcabal.com/wp-content/uploads/insight/2026/03/Screenshot-2026-03-25-164420.png",
+      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Medical%20Brain%20Drain.jpg",
       summary:
         "Examines how gaps in clinical training—particularly in decision-making and communication—may contribute to Nigeria’s medical brain drain, beyond commonly cited factors like pay and working conditions.",
       link: "https://insights.techcabal.com/how-gaps-in-medical-training-may-contribute-to-nigerias-brain-drain/",
@@ -180,7 +180,7 @@ export default function PortfolioWebsite() {
   };
 
   // Reusable image placeholder block
-  const ImagePlaceholder = ({ label }) => (
+  const ImagePlaceholder = ({ label }: { label: string }) => (
     <div className="flex h-44 w-full items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50">
       <div className="text-center">
         <svg
