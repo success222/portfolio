@@ -80,7 +80,7 @@ export default function PortfolioWebsite() {
   const dataProjects = [
     {
       title: "Quality of Life in Children with Autism Spectrum Disorder Analysis",
-      image: null,
+      image: "https://github.com/success222/QoL-Autism-Analysis/blob/main/interventions_comparison.png?raw=true",
       summary:
         "An end-to-end analysis of Autism Spectrum Disorder, covering data cleaning, exploratory analysis, and visualisation. The project surfaces actionable patterns and communicates findings through clear charts and a structured narrative, demonstrating rigorous analytical thinking applied to a real-world problem.",
       link: "https://github.com/success222/QoL-Autism-Analysis",
