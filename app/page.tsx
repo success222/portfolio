@@ -2,39 +2,42 @@ export default function PortfolioWebsite() {
   const featuredProjects = [
     {
       title: "Cardiometabolic Risk Prediction App",
-      type: "Deployed ML Project",
+      type: "Deployed ML System",
       description:
-        "A machine learning web application that predicts multiple cardiometabolic risk factors from non-laboratory inputs, built to support preventive health screening and decision-making.",
+        "A deployed machine learning application that predicts multiple cardiometabolic risk factors using non-laboratory inputs, designed to support early risk screening and preventive health decision-making.",
       highlights: [
-        "Multi-output prediction workflow",
+        "Multi-output classification model",
+        "F1-score up to 0.86",
+        "Trained on NHANES population health data",
         "Flask deployment with user-facing interface",
-        "Focus on real-world health risk estimation",
       ],
       codeLink: "https://github.com/success222/cardiometabolic-risk-pred",
-      demoLink: "https://cardiometabolic-risk-pred.onrender.com/"
+      demoLink: "https://cardiometabolic-risk-pred.onrender.com/",
     },
     {
       title: "Sleep Disorder Prediction App",
-      type: "Featured ML Project",
+      type: "Deployed ML System",
       description:
-        "A machine learning application designed to predict likely sleep disorder outcomes based on lifestyle and health-related features, with deployment-focused improvements for usability.",
+        "A machine learning application that predicts sleep disorder outcomes from lifestyle and physiological features, built with a focus on practical usability and deployment-ready design.",
       highlights: [
-        "End-to-end ML pipeline",
-        "Deployment-oriented product thinking",
-        "Health-focused user experience",
+        "Classification pipeline for sleep disorder prediction",
+        "End-to-end workflow from preprocessing to deployment",
+        "Flask-based deployed application",
+        "Designed for real-world user interaction",
       ],
       codeLink: "https://github.com/success222/Sleep-Disorder-New",
-      demoLink: "https://sleep-disorder-new.onrender.com/"
+      demoLink: "https://sleep-disorder-new.onrender.com/",
     },
     {
       title: "ASD Screening Analysis",
-      type: "ML / Data Science Project",
+      type: "Machine Learning Project",
       description:
-        "A predictive modeling project comparing machine learning approaches for autism screening in children, with strong performance and emphasis on interpretable healthcare applications.",
+        "A predictive modeling project for autism spectrum disorder screening in children, comparing multiple machine learning approaches with a focus on performance and interpretability in healthcare contexts.",
       highlights: [
-        "Model comparison and evaluation",
-        "Healthcare use case",
-        "Child health relevance",
+        "Model comparison across Logistic Regression, SVM, and Random Forest",
+        "Accuracy of about 0.98",
+        "ROC-AUC of 1.00",
+        "Child health screening use case",
       ],
       codeLink: "https://github.com/success222/ASD-Prediction-in-Children/tree/main",
     },
@@ -45,17 +48,17 @@ export default function PortfolioWebsite() {
     {
       title: "Informal Healthcare in Nigeria: Filling Gaps in a Strained System",
       type: "Article",
-      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.webp", 
+      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.webp",
       summary:
-        "Explores how informal providers (e.g., drug vendors, TBAs) function as a parallel care system due to gaps in primary healthcare access. Highlights the trade-off between accessibility and quality, and the need for structured integration into formal health systems.",
-      link: "https://insights.techcabal.com/informal-healthcare-in-nigeria-filling-gaps-in-a-fragile-system/", // Replace with actual article URL
+        "Examines how informal providers function as a parallel care system in response to persistent gaps in primary healthcare access, highlighting the trade-off between accessibility and quality.",
+      link: "https://insights.techcabal.com/informal-healthcare-in-nigeria-filling-gaps-in-a-fragile-system/",
     },
     {
       title: "How Gaps in Medical Training May Contribute to Nigeria’s Brain Drain",
       type: "Article",
       image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Medical%20Brain%20Drain.jpg",
       summary:
-        "Examines how gaps in clinical training—particularly in decision-making and communication—may contribute to Nigeria’s medical brain drain, beyond commonly cited factors like pay and working conditions.",
+        "Explores how gaps in clinical training, especially in communication and decision-making, may contribute to Nigeria’s medical brain drain beyond the usual explanations of salary and working conditions.",
       link: "https://insights.techcabal.com/how-gaps-in-medical-training-may-contribute-to-nigerias-brain-drain/",
     },
     {
@@ -63,7 +66,7 @@ export default function PortfolioWebsite() {
       type: "Article",
       image: "https://insights.techcabal.com/wp-content/uploads/insight/2025/12/ChatGPT-Image-Dec-3-2025-10_06_31-AM.png",
       summary:
-        "Analyzes the effectiveness of teletherapy in addressing mental health access gaps in Africa, showing strong outcomes for common conditions while emphasizing its role as a complement to, not a replacement for, in-person care.",
+        "Assesses teletherapy as a response to mental health access gaps in Africa, showing strong outcomes for common conditions while positioning virtual care as a complement to in-person care.",
       link: "https://insights.techcabal.com/teletherapy-in-africa-is-virtual-care-as-effective-as-traditional-therapy/",
     },
     {
@@ -71,7 +74,7 @@ export default function PortfolioWebsite() {
       type: "Report",
       image: null,
       summary:
-        "A comprehensive research report examining [subject area], produced for TechCabal's insights arm. The report covers market dynamics, stakeholder perspectives, and data-driven recommendations, providing a structured view of the landscape for decision-makers and investors.",
+        "A research report examining the Nigerian healthtech landscape, including market trends, stakeholder perspectives, and structured recommendations for operators, investors, and decision-makers.",
       link: "#",
     },
   ];
@@ -82,14 +85,14 @@ export default function PortfolioWebsite() {
       title: "Quality of Life in Children with Autism Spectrum Disorder Analysis",
       image: "https://github.com/success222/QoL-Autism-Analysis/blob/main/interventions_comparison.png?raw=true",
       summary:
-        "An end-to-end analysis of Autism Spectrum Disorder, covering data cleaning, exploratory analysis, and visualisation. The project surfaces actionable patterns and communicates findings through clear charts and a structured narrative, demonstrating rigorous analytical thinking applied to a real-world problem.",
+        "An end-to-end analysis of quality of life in children with Autism Spectrum Disorder, covering data cleaning, exploratory analysis, and visualization to uncover patterns across interventions and outcomes.",
       link: "https://github.com/success222/QoL-Autism-Analysis",
     },
     {
-      title: "Data Analysis Project Two",
+      title: "Behavioural and Health Data Analysis",
       image: null,
       summary:
-        "A structured analysis project focused on [topic/dataset], applying statistical methods to uncover trends and test hypotheses. The work demonstrates proficiency in Python-based data workflows and a strong emphasis on interpretability and evidence-based storytelling.",
+        "A structured data analysis project exploring behavioural and health-related data to identify meaningful patterns through statistical analysis, feature exploration, and visualization.",
       link: "#",
     },
   ];
@@ -98,25 +101,26 @@ export default function PortfolioWebsite() {
   const healthcareResearch = [
     {
       title: "Automated Detection of Pulmonary Tuberculosis From Chest X-Ray Images Using Artificial Intelligence: A Systematic Review",
-      subtitle: "Research Paper (In Progress)",
+      subtitle: "Systematic Review",
       summary:
-        "A systematic review of AI approaches for pulmonary tuberculosis detection using chest X-rays. Evaluates modelling techniques, datasets, and performance metrics across studies, with a focus on clinical relevance and applicability in low-resource settings.",
+        "A systematic review of artificial intelligence approaches for pulmonary tuberculosis detection using chest X-ray imaging, with emphasis on modelling techniques, datasets, performance metrics, and clinical relevance in low-resource settings.",
       link: "#",
     },
     {
       title: "Automated Detection of Pulmonary Tuberculosis From Chest X-Ray Images Using Artificial Intelligence",
-      subtitle: "Research Thesis (In Progress)",
+      subtitle: "Research Thesis",
       summary:
-        "Developing a deep learning-based model for TB detection from chest X-ray images. Focused on building a clinically relevant screening tool, with evaluation using metrics such as sensitivity, specificity, and AUC, alongside model explainability (Grad-CAM).",
+        "A deep learning project focused on automated tuberculosis detection from chest X-ray images, emphasizing clinically relevant screening performance, explainability, and practical application.",
       link: "#",
     },
   ];
 
+  // certifications
   const certifications = [
     {
       label: "Data Science Professional Certificate",
       issuer: "International Business Machines Corporation",
-      link: "#", // Replace with certificate URL or PDF link
+      link: "#",
     },
     {
       label: "Data Analysis Professional Certificate",
@@ -140,14 +144,15 @@ export default function PortfolioWebsite() {
     },
   ];
 
+  // skills
   const skills = {
     "ML & Modeling": [
       "Scikit-learn",
-      "Model evaluation",
-      "Classification",
+      "Classification (binary and multi-output)",
       "Feature engineering",
       "Cross-validation",
       "Hyperparameter tuning",
+      "Model evaluation (F1-score, ROC-AUC, sensitivity, specificity)",
     ],
     "Deployment & Engineering": [
       "Flask",
@@ -156,7 +161,7 @@ export default function PortfolioWebsite() {
       "AWS",
       "Git",
       "GitHub",
-      "Pipeline thinking",
+      "ML pipeline thinking",
     ],
     "Data & Analytics": [
       "Python",
@@ -179,7 +184,7 @@ export default function PortfolioWebsite() {
     ],
   };
 
-  // Reusable image placeholder block
+   // Reusable image placeholder block
   const ImagePlaceholder = ({ label }: { label: string }) => (
     <div className="flex h-44 w-full items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50">
       <div className="text-center">
@@ -201,10 +206,9 @@ export default function PortfolioWebsite() {
     </div>
   );
 
+  {/* ── Summary Section ── */}
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-
-      {/* ── Hero ── */}
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <p className="mb-6 inline-flex rounded-full border border-slate-200 px-4 py-1 text-sm font-medium text-slate-600">
@@ -213,38 +217,60 @@ export default function PortfolioWebsite() {
           <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
             <div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                Building machine learning solutions grounded in healthcare, research, and real-world impact.
+                Machine Learning Engineer focused on healthcare AI and real world impact
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-                I'm Success Sotonwa — a healthcare-trained professional transitioning into machine learning engineering, with experience spanning data analysis, research, deployed ML projects, and health-focused problem solving.
+                I&apos;m Success Sotonwa — a machine learning engineer focused on healthcare AI and clinical decision support. I build and deploy machine learning systems designed for real-world health applications, combining data, research, and domain expertise to improve decision-making and outcomes.
               </p>
+              {/* <p className="mt-4 text-sm font-semibold text-700">
+                Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
+              </p> */}
               <div className="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 mb-3">My Journey</p>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+                  My Journey
+                </p>
                 <p className="text-sm leading-7 text-slate-700">
-                  My background started in healthcare, where I saw firsthand how gaps in systems, access, and decision-making affect outcomes. That led me into data analysis and research, where I learned how to work with evidence, uncover patterns, and communicate findings clearly. Over time, I moved deeper into data science and machine learning, focusing on building practical tools that can support better health decisions. Today, I'm working toward becoming a machine learning engineer with a strong foundation in healthcare, public health, and applied problem solving.
+                  With a background in healthcare and public health, my work is grounded in real system challenges — from access gaps to clinical decision-making limitations. I focus on translating these problems into practical machine learning solutions, building tools that are technically sound and usable in real-world settings.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#projects" className="rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]">
+                <a
+                  href="#projects"
+                  className="rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]"
+                >
                   View Projects
                 </a>
-                <a href="#cv" className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+                {/* <a
+                  href="#systems"
+                  className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                >
+                  ML Systems
+                </a> */}
+                <a
+                  href="#cv"
+                  className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                >
                   CV & Certifications
                 </a>
               </div>
             </div>
- 
+
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm lg:sticky lg:top-8">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">At a glance</h2>
+              <h2 className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
+                At a glance
+              </h2>
               <div className="mt-4 grid gap-3">
                 {[
-                  { icon: "🧠", label: "Deployed ML apps" },
-                  { icon: "🏥", label: "Healthcare & public health background" },
-                  { icon: "📊", label: "Research-informed problem framing" },
-                  { icon: "🔬", label: "Published articles & academic research" },
+                  { icon: "🧠", label: "Built and deployed ML systems" },
+                  { icon: "🏥", label: "Healthcare and public health background" },
+                  { icon: "📊", label: "Data analysis and model evaluation" },
+                  { icon: "🔬", label: "Published articles and academic research" },
                   { icon: "⚙️", label: "Flask · Docker · Scikit-learn · Python" },
                 ].map((item) => (
-                  <div key={item.label} className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700">
+                  <div
+                    key={item.label}
+                    className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700"
+                  >
                     <span>{item.icon}</span>
                     <span>{item.label}</span>
                   </div>
@@ -255,27 +281,50 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
+      
+      {/* <section id="systems" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            ML Systems I&apos;ve Built
+          </p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+            Practical machine learning systems for health-focused use cases.
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg text-slate-600">
+            My strongest work sits at the intersection of machine learning, healthcare, and deployment — not just modeling experiments, but systems designed to be usable in real-world settings.
+          </p>
+        </div>
+      </section> */}
+
       {/* ── Featured Projects ── */}
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Featured Work</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Featured Work
+          </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
             Machine learning projects that show how I build.
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            These are the projects that should carry the most weight on the site. They represent applied modeling, deployment, and problem solving in health-focused contexts.
+            These projects show applied modeling, system thinking, deployment, and problem solving in health-focused contexts.
           </p>
         </div>
- 
+
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
-            <div key={project.title} className="flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <div
+              key={project.title}
+              className="flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
               <p className="text-sm font-medium text-slate-500">{project.type}</p>
               <h3 className="mt-3 text-xl font-semibold text-slate-950">{project.title}</h3>
               <p className="mt-4 text-sm leading-7 text-slate-600">{project.description}</p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {project.highlights.map((highlight) => (
-                  <span key={highlight} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+                  <span
+                    key={highlight}
+                    className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+                  >
                     {highlight}
                   </span>
                 ))}
@@ -287,7 +336,6 @@ export default function PortfolioWebsite() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
                 >
-                  {/* GitHub icon */}
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
                   </svg>
@@ -300,9 +348,19 @@ export default function PortfolioWebsite() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
                   >
-                    {/* External link icon */}
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    {/* GitHub icon */}
+                    <svg
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
                     </svg>
                     App Demo
                   </a>
@@ -316,7 +374,6 @@ export default function PortfolioWebsite() {
       {/* ── Applied Data & Research ── */}
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
               Applied Data & Research
@@ -325,33 +382,43 @@ export default function PortfolioWebsite() {
               The experience behind the ML work.
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              Real analytical, research, and writing experience that grounds and supports the machine learning work.
+              Real analytical, research, and writing experience that grounds and strengthens the machine learning work.
             </p>
           </div>
 
           {/* ── TechCabal ── */}
           <div className="mt-16">
-            <div className="flex items-center gap-4">
-              <h3 className="text-xl font-bold text-slate-950">TechCabal Insights — Articles & Reports</h3>
-            </div>
+            <h3 className="text-xl font-bold text-slate-950">TechCabal Insights — Articles & Reports</h3>
             <p className="mt-2 max-w-2xl text-sm text-slate-600">
-              Published research-driven articles and a comprehensive report, combining data analysis, insight generation, and evidence-backed storytelling.
+              Published healthcare-focused research and analysis covering system gaps, digital health, workforce challenges, and emerging trends in the African health ecosystem.
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {tcArticles.map((item) => (
-                <div key={item.title} className="group flex flex-col rounded-3xl border border-slate-200 bg-slate-50 overflow-hidden transition hover:-translate-y-1 hover:shadow-md">
-                  {item.image
-                    ? <img src={item.image} alt={item.title} className="h-44 w-full object-cover" />
-                    : <div className="px-4 pt-4"><ImagePlaceholder label={item.title} /></div>
-                  }
+                <div
+                  key={item.title}
+                  className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  {item.image ? (
+                    <img src={item.image} alt={item.title} className="h-44 w-full object-cover" />
+                  ) : (
+                    <div className="px-4 pt-4">
+                      <ImagePlaceholder label={item.title} />
+                    </div>
+                  )}
                   <div className="flex flex-1 flex-col p-5">
-                    <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">{item.type}</span>
-                    <h4 className="mt-2 text-base font-semibold text-slate-950 leading-snug">{item.title}</h4>
-                    <p className="mt-3 text-sm leading-6 text-slate-600 flex-1">{item.summary}</p>
+                    <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
+                      {item.type}
+                    </span>
+                    <h4 className="mt-2 text-base font-semibold leading-snug text-slate-950">
+                      {item.title}
+                    </h4>
+                    <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
                     <a
                       href={item.link}
-                      className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 group-hover:text-slate-600 transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
                     >
                       Read {item.type.toLowerCase()} →
                     </a>
@@ -363,30 +430,35 @@ export default function PortfolioWebsite() {
 
           {/* ── Data Analysis Projects ── */}
           <div className="mt-20">
-            <div className="flex items-center gap-4">
-              <h3 className="text-xl font-bold text-slate-950">Data Analysis Projects</h3>
-              {/* <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-500">
-                2 Projects
-              </span> */}
-            </div>
+            <h3 className="text-xl font-bold text-slate-950">Data Analysis Projects</h3>
             <p className="mt-2 max-w-2xl text-sm text-slate-600">
-              End-to-end analytical projects across health and behavioural datasets, with a strong focus on clean methodology and clear communication.
+              End-to-end analytical projects across health and behavioural datasets, with emphasis on clean methodology, interpretability, and clear communication.
             </p>
 
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               {dataProjects.map((item) => (
-                <div key={item.title} className="group flex flex-col rounded-3xl border border-slate-200 bg-slate-50 overflow-hidden transition hover:-translate-y-1 hover:shadow-md">
-                  {item.image
-                    ? <img src={item.image} alt={item.title} className="h-52 w-full object-cover" />
-                    : <div className="px-5 pt-5"><ImagePlaceholder label={item.title} /></div>
-                  }
+                <div
+                  key={item.title}
+                  className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  {item.image ? (
+                    <img src={item.image} alt={item.title} className="h-52 w-full object-cover" />
+                  ) : (
+                    <div className="px-5 pt-5">
+                      <ImagePlaceholder label={item.title} />
+                    </div>
+                  )}
                   <div className="flex flex-1 flex-col p-6">
-                    <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">Data Analysis</span>
+                    <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
+                      Data Analysis
+                    </span>
                     <h4 className="mt-2 text-lg font-semibold text-slate-950">{item.title}</h4>
-                    <p className="mt-3 text-sm leading-6 text-slate-600 flex-1">{item.summary}</p>
+                    <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
                     <a
                       href={item.link}
-                      className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 group-hover:text-slate-600 transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
                     >
                       View project →
                     </a>
@@ -398,19 +470,17 @@ export default function PortfolioWebsite() {
 
           {/* ── Healthcare & Public Health Research ── */}
           <div className="mt-20">
-            <div className="flex items-center gap-4">
-              <h3 className="text-xl font-bold text-slate-950">Healthcare & Public Health Research</h3>
-              {/* <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-500">
-                2 Works
-              </span> */}
-            </div>
+            <h3 className="text-xl font-bold text-slate-950">Healthcare & Public Health Research</h3>
             <p className="mt-2 max-w-2xl text-sm text-slate-600">
               Original academic research grounded in clinical and public health training.
             </p>
 
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               {healthcareResearch.map((item) => (
-                <div key={item.title} className="group rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-md">
+                <div
+                  key={item.title}
+                  className="group rounded-3xl border border-slate-200 bg-slate-50 p-7 transition hover:-translate-y-1 hover:shadow-md"
+                >
                   <span className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
                     {item.subtitle}
                   </span>
@@ -418,15 +488,16 @@ export default function PortfolioWebsite() {
                   <p className="mt-3 text-sm leading-7 text-slate-600">{item.summary}</p>
                   <a
                     href={item.link}
-                    className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 group-hover:text-slate-600 transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
                   >
-                    Read paper →
+                    View work →
                   </a>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
@@ -435,8 +506,12 @@ export default function PortfolioWebsite() {
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Skills</p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Technical capabilities.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Skills
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+                Technical capabilities.
+              </h2>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
               {Object.entries(skills).map(([category, items]) => (
@@ -444,7 +519,10 @@ export default function PortfolioWebsite() {
                   <h3 className="text-lg font-semibold text-slate-950">{category}</h3>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {items.map((item) => (
-                      <span key={item} className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">
+                      <span
+                        key={item}
+                        className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
+                      >
                         {item}
                       </span>
                     ))}
@@ -456,18 +534,23 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      {/* ── CV & Certifications ── */}
+    {/* ── CV & Certifications ── */}
       <section id="cv" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
-
-          {/* CV download */}
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">CV</p>
             <h2 className="mt-3 text-2xl font-bold text-slate-950">Resume / Curriculum Vitae</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Includes healthcare background, analytics experience, and machine learning projects.
+              Includes machine learning projects, healthcare experience, and technical skills relevant to ML engineering and health-focused applications.
             </p>
-            <a href="https://drive.google.com/file/d/1yxJZ77HxV-MK4olvCIaGQVdR-5EuTpQB/view?usp=sharing" className="mt-6 inline-flex rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white">
+
+            {/* CV download */}
+            <a
+              href="https://drive.google.com/file/d/1yxJZ77HxV-MK4olvCIaGQVdR-5EuTpQB/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white"
+            >
               View CV →
             </a>
           </div>
@@ -489,30 +572,29 @@ export default function PortfolioWebsite() {
                 >
                   <div>
                     <p className="font-semibold text-slate-900">{cert.label}</p>
-                    <p className="text-xs text-slate-500 mt-0.5">{cert.issuer}</p>
+                    <p className="mt-0.5 text-xs text-slate-500">{cert.issuer}</p>
                   </div>
-                  <span className="ml-4 flex-shrink-0 text-xs font-semibold text-slate-500 underline underline-offset-4 group-hover:text-slate-800 transition">
+                  <span className="ml-4 flex-shrink-0 text-xs font-semibold text-slate-500 underline underline-offset-4 transition group-hover:text-slate-800">
                     View →
                   </span>
                 </a>
               ))}
             </div>
           </div>
-
         </div>
       </section>
-
+      
       {/* ── Contact ── */}
       <section className="border-t border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Let's build meaningful health-focused ML systems.
+                Let&apos;s build meaningful health-focused ML systems.
               </h2>
-              {/* <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-                This portfolio is designed to show range without losing focus: analytics, research, healthcare context, and machine learning engineering.
-              </p> */}
+              <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
+                Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
+              </p>
             </div>
             <div className="rounded-3xl border border-slate-800 bg-slate-900 p-6">
               <p className="text-sm font-medium text-slate-400">Contact</p>
@@ -520,13 +602,23 @@ export default function PortfolioWebsite() {
                 <p>Email: sotonwasuccess1@gmail.com</p>
                 <p>
                   GitHub:{" "}
-                  <a href="https://github.com/success222" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-white transition">
+                  <a
+                    href="https://github.com/success222"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4 transition hover:text-white"
+                  >
                     github.com/success222
                   </a>
                 </p>
                 <p>
                   LinkedIn:{" "}
-                  <a href="https://linkedin.com/in/success-sotonwa" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-white transition">
+                  <a
+                    href="https://linkedin.com/in/success-sotonwa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4 transition hover:text-white"
+                  >
                     linkedin.com/in/success-sotonwa
                   </a>
                 </p>
@@ -535,7 +627,6 @@ export default function PortfolioWebsite() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }
