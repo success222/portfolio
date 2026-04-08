@@ -45,7 +45,7 @@ export default function PortfolioWebsite() {
     {
       title: "Informal Healthcare in Nigeria: Filling Gaps in a Strained System",
       type: "Article",
-      image: "https://insights.techcabal.com/wp-content/uploads/insight/2026/02/2-1.png", 
+      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.png", 
       summary:
         "Explores how informal providers (e.g., drug vendors, TBAs) function as a parallel care system due to gaps in primary healthcare access. Highlights the trade-off between accessibility and quality, and the need for structured integration into formal health systems.",
       link: "https://insights.techcabal.com/informal-healthcare-in-nigeria-filling-gaps-in-a-fragile-system/", // Replace with actual article URL
