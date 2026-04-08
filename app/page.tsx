@@ -238,19 +238,25 @@ export default function PortfolioWebsite() {
                   href="#projects"
                   className="rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]"
                 >
-                  View Projects
+                  Projects
                 </a>
-                {/* <a
-                  href="#systems"
-                  className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                <a
+                  href="#experience"
+                  className="rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]"
                 >
-                  ML Systems
-                </a> */}
+                  Experience
+                </a>
                 <a
                   href="#cv"
-                  className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                  className="rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]"
                 >
                   CV & Certifications
+                </a>
+                <a
+                  href="#contact"
+                  className="rounded-2xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:scale-[1.02]"
+                >
+                  Contact
                 </a>
               </div>
             </div>
@@ -372,7 +378,7 @@ export default function PortfolioWebsite() {
       </section>
 
       {/* ── Applied Data & Research ── */}
-      <section className="border-y border-slate-200 bg-white">
+      <section id="experience" className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -585,7 +591,7 @@ export default function PortfolioWebsite() {
       </section>
       
       {/* ── Contact ── */}
-      <section className="border-t border-slate-200 bg-slate-950 text-white">
+      <section id="contact" className="border-t border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
