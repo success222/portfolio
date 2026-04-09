@@ -52,6 +52,7 @@ export default function PortfolioWebsite() {
       summary:
         "Examines how informal providers function as a parallel care system in response to persistent gaps in primary healthcare access, highlighting the trade-off between accessibility and quality.",
       link: "https://insights.techcabal.com/informal-healthcare-in-nigeria-filling-gaps-in-a-fragile-system/",
+      available: true,
     },
     {
       title: "How Gaps in Medical Training May Contribute to Nigeria’s Brain Drain",
@@ -60,6 +61,7 @@ export default function PortfolioWebsite() {
       summary:
         "Explores how gaps in clinical training, especially in communication and decision-making, may contribute to Nigeria’s medical brain drain beyond the usual explanations of salary and working conditions.",
       link: "https://insights.techcabal.com/how-gaps-in-medical-training-may-contribute-to-nigerias-brain-drain/",
+      available: true,
     },
     {
       title: "Teletherapy in Africa: Is Virtual Care as Effective as Traditional Therapy?",
@@ -68,14 +70,17 @@ export default function PortfolioWebsite() {
       summary:
         "Assesses teletherapy as a response to mental health access gaps in Africa, showing strong outcomes for common conditions while positioning virtual care as a complement to in-person care.",
       link: "https://insights.techcabal.com/teletherapy-in-africa-is-virtual-care-as-effective-as-traditional-therapy/",
+      available: true,
     },
     {
       title: "The State of Healthtech in Nigeria 2026",
       type: "Report",
-      image: null,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWpwebNGfpBjdE5JFhh2khvq6vLM61I_9RQ&s",
       summary:
         "A research report examining the Nigerian healthtech landscape, including market trends, stakeholder perspectives, and structured recommendations for operators, investors, and decision-makers.",
       link: "#",
+      available: false,
+      status: "In Progress",
     },
   ];
 
@@ -83,17 +88,19 @@ export default function PortfolioWebsite() {
   const dataProjects = [
     {
       title: "Quality of Life in Children with Autism Spectrum Disorder Analysis",
-      image: "https://github.com/success222/QoL-Autism-Analysis/blob/main/interventions_comparison.png?raw=true",
+      image: "https://www.brightheart.co.uk/wp-content/uploads/2024/06/Understanding-Autism-Spectrum-Condition-ASC.jpg.webp",
       summary:
         "An end-to-end analysis of quality of life in children with Autism Spectrum Disorder, covering data cleaning, exploratory analysis, and visualization to uncover patterns across interventions and outcomes.",
       link: "https://github.com/success222/QoL-Autism-Analysis",
+      available: true,
     },
     {
-      title: "Behavioural and Health Data Analysis",
-      image: null,
+      title: "Assessing Vendors' Perspectives On The Ban Of Single-Use Plastics (Sups) In Alimosho, Lagos State",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRGac0qTbtI6fOcKJupIcrxDa5nXShoBX31Q&s",
       summary:
-        "A structured data analysis project exploring behavioural and health-related data to identify meaningful patterns through statistical analysis, feature exploration, and visualization.",
+        "Analysis of vendors’ awareness, attitudes, and adaptive responses to the ban on single-use plastics (SUPs) in Alimosho, Lagos, highlighting compliance challenges, economic impact, and policy gaps.",
       link: "#",
+      status: "In Progress",
     },
   ];
 
@@ -105,6 +112,7 @@ export default function PortfolioWebsite() {
       summary:
         "A systematic review of artificial intelligence approaches for pulmonary tuberculosis detection using chest X-ray imaging, with emphasis on modelling techniques, datasets, performance metrics, and clinical relevance in low-resource settings.",
       link: "#",
+      status: "In Progress",
     },
     {
       title: "Automated Detection of Pulmonary Tuberculosis From Chest X-Ray Images Using Artificial Intelligence",
@@ -112,6 +120,7 @@ export default function PortfolioWebsite() {
       summary:
         "A deep learning project focused on automated tuberculosis detection from chest X-ray images, emphasizing clinically relevant screening performance, explainability, and practical application.",
       link: "#",
+      status: "In Progress",
     },
   ];
 
@@ -130,7 +139,7 @@ export default function PortfolioWebsite() {
     {
       label: "Bachelor of Nursing Science (BNSc)",
       issuer: "Bowen University, Iwo",
-      link: "#",
+      link: "https://drive.google.com/file/d/1HtZCLpxI_YtGlEj9Z8SH1EdfI8oPXy1e/view?usp=sharing",
     },
     {
       label: "RN — Registered Nurse",
@@ -420,6 +429,7 @@ export default function PortfolioWebsite() {
                       {item.title}
                     </h4>
                     <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
+                    {item.available ? (
                     <a
                       href={item.link}
                       target="_blank"
@@ -428,6 +438,11 @@ export default function PortfolioWebsite() {
                     >
                       Read {item.type.toLowerCase()} →
                     </a>
+                  ) : (
+                    <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
+                      {item.status || "Coming Soon"}
+                    </span>
+                  )}
                   </div>
                 </div>
               ))}
@@ -460,6 +475,7 @@ export default function PortfolioWebsite() {
                     </span>
                     <h4 className="mt-2 text-lg font-semibold text-slate-950">{item.title}</h4>
                     <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
+                    {item.available ? (
                     <a
                       href={item.link}
                       target="_blank"
@@ -468,6 +484,11 @@ export default function PortfolioWebsite() {
                     >
                       View project →
                     </a>
+                    ) : (
+                      <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
+                        {item.status || "Coming Soon"}
+                      </span>
+                    )}
                   </div>
                 </div>
               ))}
@@ -492,6 +513,7 @@ export default function PortfolioWebsite() {
                   </span>
                   <h4 className="mt-4 text-lg font-semibold text-slate-950">{item.title}</h4>
                   <p className="mt-3 text-sm leading-7 text-slate-600">{item.summary}</p>
+                  {item.available ? (
                   <a
                     href={item.link}
                     target="_blank"
@@ -500,6 +522,11 @@ export default function PortfolioWebsite() {
                   >
                     View work →
                   </a>
+                  ) : (
+                    <span className="mt-6 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
+                      {item.status || "In Progress"}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
@@ -552,7 +579,7 @@ export default function PortfolioWebsite() {
 
             {/* CV download */}
             <a
-              href="https://drive.google.com/file/d/1yxJZ77HxV-MK4olvCIaGQVdR-5EuTpQB/view?usp=sharing"
+              href="https://drive.google.com/file/d/1b-o01Lc4bw4wsAqvEXE2ZGfShJvcsDkk/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white"
