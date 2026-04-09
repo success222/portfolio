@@ -78,8 +78,7 @@ export default function PortfolioWebsite() {
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWpwebNGfpBjdE5JFhh2khvq6vLM61I_9RQ&s",
       summary:
         "A research report examining the Nigerian healthtech landscape, including market trends, stakeholder perspectives, and structured recommendations for operators, investors, and decision-makers.",
-      link: "#",
-      available: false,
+      link: "",
       status: "In Progress",
     },
   ];
@@ -99,7 +98,7 @@ export default function PortfolioWebsite() {
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRGac0qTbtI6fOcKJupIcrxDa5nXShoBX31Q&s",
       summary:
         "Analysis of vendors’ awareness, attitudes, and adaptive responses to the ban on single-use plastics (SUPs) in Alimosho, Lagos, highlighting compliance challenges, economic impact, and policy gaps.",
-      link: "#",
+      link: "",
       status: "In Progress",
     },
   ];
@@ -111,7 +110,7 @@ export default function PortfolioWebsite() {
       subtitle: "Systematic Review",
       summary:
         "A systematic review of artificial intelligence approaches for pulmonary tuberculosis detection using chest X-ray imaging, with emphasis on modelling techniques, datasets, performance metrics, and clinical relevance in low-resource settings.",
-      link: "#",
+      link: "",
       status: "In Progress",
     },
     {
@@ -119,7 +118,7 @@ export default function PortfolioWebsite() {
       subtitle: "Research Thesis",
       summary:
         "A deep learning project focused on automated tuberculosis detection from chest X-ray images, emphasizing clinically relevant screening performance, explainability, and practical application.",
-      link: "#",
+      link: "",
       status: "In Progress",
     },
   ];
@@ -429,7 +428,7 @@ export default function PortfolioWebsite() {
                       {item.title}
                     </h4>
                     <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
-                    {item.available ? (
+                    {item.link ? (
                     <a
                       href={item.link}
                       target="_blank"
@@ -475,7 +474,7 @@ export default function PortfolioWebsite() {
                     </span>
                     <h4 className="mt-2 text-lg font-semibold text-slate-950">{item.title}</h4>
                     <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
-                    {item.available ? (
+                    {item.link ? (
                     <a
                       href={item.link}
                       target="_blank"
@@ -513,7 +512,7 @@ export default function PortfolioWebsite() {
                   </span>
                   <h4 className="mt-4 text-lg font-semibold text-slate-950">{item.title}</h4>
                   <p className="mt-3 text-sm leading-7 text-slate-600">{item.summary}</p>
-                  {item.available ? (
+                  {item.link ? (
                   <a
                     href={item.link}
                     target="_blank"
