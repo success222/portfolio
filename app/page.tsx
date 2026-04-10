@@ -220,15 +220,15 @@ export default function PortfolioWebsite() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <p className="mb-6 inline-flex rounded-full border border-slate-200 px-4 py-1 text-sm font-medium text-slate-600">
-            ML Engineer • Healthcare AI • Public Health
+            Data Scientist • Machine Learning • Healthcare AI • Public Health
           </p>
           <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
             <div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                Machine Learning Engineer focused on healthcare AI and real world impact
+                Machine Learning-focused Data Scientist building healthcare AI systems
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-                I&apos;m Success Sotonwa — a machine learning engineer focused on healthcare AI and clinical decision support. I build and deploy machine learning systems designed for real-world health applications, combining data, research, and domain expertise to improve decision-making and outcomes.
+                I&apos;m Success Sotonwa — a data scientist building and deploying machine learning systems for healthcare and public health. My work focuses on developing practical AI solutions that improve clinical decision-making and real-world outcomes.
               </p>
               {/* <p className="mt-4 text-sm font-semibold text-700">
                 Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
@@ -238,7 +238,7 @@ export default function PortfolioWebsite() {
                   My Journey
                 </p>
                 <p className="text-sm leading-7 text-slate-700">
-                  With a background in healthcare and public health, my work is grounded in real system challenges — from access gaps to clinical decision-making limitations. I focus on translating these problems into practical machine learning solutions, building tools that are technically sound and usable in real-world settings.
+                  With a background in healthcare and public health, I focus on solving real-world system challenges — from access gaps to clinical decision-making limitations. I translate these problems into practical machine learning solutions that are both technically sound and usable in real-world settings.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">
