@@ -220,15 +220,15 @@ export default function PortfolioWebsite() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <p className="mb-6 inline-flex rounded-full border border-slate-200 px-4 py-1 text-sm font-medium text-slate-600">
-            Data Scientist • Machine Learning • Healthcare AI • Public Health
+            Machine Learning Engineer • Healthcare AI • Public Health • Data Science
           </p>
           <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
             <div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                Machine Learning-focused Data Scientist building healthcare AI systems
+                Machine Learning Engineer building and deploying healthcare AI systems
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-                I&apos;m Success Sotonwa — a data scientist building and deploying machine learning systems for healthcare and public health. My work focuses on developing practical AI solutions that improve clinical decision-making and real-world outcomes.
+                I&apos;m Success Sotonwa — a machine learning engineer building and deploying ML systems for healthcare and public health. My work focuses on developing practical AI solutions that improve clinical decision-making and real-world outcomes.
               </p>
               {/* <p className="mt-4 text-sm font-semibold text-700">
                 Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
