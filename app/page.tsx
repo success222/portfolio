@@ -64,22 +64,22 @@ export default function PortfolioWebsite() {
       available: true,
     },
     {
-      title: "Teletherapy in Africa: Is Virtual Care as Effective as Traditional Therapy?",
+      title: "Nigeria’s Healthtech Startups Are Building Around Fragmented Data Systems ",
       type: "Article",
-      image: "https://insights.techcabal.com/wp-content/uploads/insight/2025/12/ChatGPT-Image-Dec-3-2025-10_06_31-AM.png",
+      image: "https://insights.techcabal.com/wp-content/uploads/insight/2026/05/Health-data-fragmentation-scaled.png",
       summary:
-        "Assesses teletherapy as a response to mental health access gaps in Africa, showing strong outcomes for common conditions while positioning virtual care as a complement to in-person care.",
-      link: "https://insights.techcabal.com/teletherapy-in-africa-is-virtual-care-as-effective-as-traditional-therapy/",
+        "Examines how fragmented data systems are shaping the development of healthtech startups in Nigeria, highlighting the challenges and opportunities in leveraging data for improved healthcare delivery.",
+      link: "https://insights.techcabal.com/nigerias-healthtech-startups-are-building-around-fragmented-data-systems/",
       available: true,
     },
     {
       title: "The State of Healthtech in Nigeria 2026",
       type: "Report",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWpwebNGfpBjdE5JFhh2khvq6vLM61I_9RQ&s",
+      image: "https://insights.techcabal.com/wp-content/uploads/insight/2026/05/Screenshot-2026-05-18-163706.png",
       summary:
         "A research report examining the Nigerian healthtech landscape, including market trends, stakeholder perspectives, and structured recommendations for operators, investors, and decision-makers.",
-      link: "",
-      status: "In Progress",
+      link: "https://insights.techcabal.com/report/state-of-healthtech-in-nigeria-2026/",
+      available: true,
     },
   ];
 
@@ -133,7 +133,7 @@ export default function PortfolioWebsite() {
     {
       label: "Data Analysis Professional Certificate",
       issuer: "International Business Machines Corporation",
-      link: "#",
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/P88FD2F4DHHI",
     },
     {
       label: "Bachelor of Nursing Science (BNSc)",
@@ -220,15 +220,15 @@ export default function PortfolioWebsite() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <p className="mb-6 inline-flex rounded-full border border-slate-200 px-4 py-1 text-sm font-medium text-slate-600">
-            Machine Learning Engineer • Healthcare AI • Public Health • Data Science
+            Healthcare Data Scientist • Machine Learning Engineer • Healthcare AI • Public Health
           </p>
           <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
             <div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                Machine Learning Engineer building and deploying healthcare AI systems
+                Building practical AI systems for healthcare and public health
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-                I&apos;m Success Sotonwa — a machine learning engineer building and deploying ML systems for healthcare and public health. My work focuses on developing practical AI solutions that improve clinical decision-making and real-world outcomes.
+                I&apos;m Success Sotonwa, a Healthcare Data Scientist and Machine Learning Engineer focused on developing and deploying machine learning solutions for healthcare and public health applications. My work combines clinical knowledge, data science, and machine learning to support better decision-making and improve real-world health outcomes.
               </p>
               {/* <p className="mt-4 text-sm font-semibold text-700">
                 Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
@@ -238,7 +238,7 @@ export default function PortfolioWebsite() {
                   My Journey
                 </p>
                 <p className="text-sm leading-7 text-slate-700">
-                  With a background in healthcare and public health, I focus on solving real-world system challenges — from access gaps to clinical decision-making limitations. I translate these problems into practical machine learning solutions that are both technically sound and usable in real-world settings.
+                  With a background in healthcare and public health, I focus on solving real-world healthcare challenges — from access gaps to clinical decision support. I translate complex health problems into practical machine learning solutions that are technically sound, interpretable, and usable in real-world settings.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -271,15 +271,15 @@ export default function PortfolioWebsite() {
 
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm lg:sticky lg:top-8">
               <h2 className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-500">
-                At a glance
+                Highlights
               </h2>
               <div className="mt-4 grid gap-3">
                 {[
-                  { icon: "🧠", label: "Built and deployed ML systems" },
-                  { icon: "🏥", label: "Healthcare and public health background" },
-                  { icon: "📊", label: "Data analysis and model evaluation" },
-                  { icon: "🔬", label: "Published articles and academic research" },
-                  { icon: "⚙️", label: "Flask · Docker · Scikit-learn · Python" },
+                  { icon: "🧠", label: "Built and deployed machine learning applications" },
+                  { icon: "🏥", label: "Clinical, healthcare, and public health background" },
+                  { icon: "📊", label: "Health data analysis, modelling, and evaluation" },
+                  { icon: "🔬", label: "Research, technical writing, and scientific communication" },
+                  { icon: "⚙️", label: "Python · Scikit-learn · Flask · Docker · SQL" },
                 ].map((item) => (
                   <div
                     key={item.label}
@@ -438,8 +438,8 @@ export default function PortfolioWebsite() {
                       Read {item.type.toLowerCase()} →
                     </a>
                   ) : (
-                    <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
-                      {item.status || "Coming Soon"}
+                     <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
+                      Coming Soon
                     </span>
                   )}
                   </div>
@@ -578,7 +578,7 @@ export default function PortfolioWebsite() {
 
             {/* CV download */}
             <a
-              href="https://drive.google.com/file/d/1b-o01Lc4bw4wsAqvEXE2ZGfShJvcsDkk/view?usp=sharing"
+              href="https://drive.google.com/file/d/14KlgwPIyrrA5ASFYJtSaYu8V8DkGHqpb/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white"
