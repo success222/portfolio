@@ -43,12 +43,12 @@ export default function PortfolioWebsite() {
     },
   ];
 
-  // TechCabal articles
   const tcArticles = [
     {
       title: "Informal Healthcare in Nigeria: Filling Gaps in a Strained System",
       type: "Article",
-      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.webp",
+      image:
+        "https://raw.githubusercontent.com/success222/portfolio/main/images/Informal%20HealthCare.webp",
       summary:
         "Examines how informal providers function as a parallel care system in response to persistent gaps in primary healthcare access, highlighting the trade-off between accessibility and quality.",
       link: "https://insights.techcabal.com/informal-healthcare-in-nigeria-filling-gaps-in-a-fragile-system/",
@@ -57,7 +57,8 @@ export default function PortfolioWebsite() {
     {
       title: "How Gaps in Medical Training May Contribute to Nigeria’s Brain Drain",
       type: "Article",
-      image: "https://raw.githubusercontent.com/success222/portfolio/main/images/Medical%20Brain%20Drain.jpg",
+      image:
+        "https://raw.githubusercontent.com/success222/portfolio/main/images/Medical%20Brain%20Drain.jpg",
       summary:
         "Explores how gaps in clinical training, especially in communication and decision-making, may contribute to Nigeria’s medical brain drain beyond the usual explanations of salary and working conditions.",
       link: "https://insights.techcabal.com/how-gaps-in-medical-training-may-contribute-to-nigerias-brain-drain/",
@@ -66,7 +67,8 @@ export default function PortfolioWebsite() {
     {
       title: "Nigeria’s Healthtech Startups Are Building Around Fragmented Data Systems ",
       type: "Article",
-      image: "https://insights.techcabal.com/wp-content/uploads/insight/2026/05/Health-data-fragmentation-scaled.png",
+      image:
+        "https://insights.techcabal.com/wp-content/uploads/insight/2026/05/Health-data-fragmentation-scaled.png",
       summary:
         "Examines how fragmented data systems are shaping the development of healthtech startups in Nigeria, highlighting the challenges and opportunities in leveraging data for improved healthcare delivery.",
       link: "https://insights.techcabal.com/nigerias-healthtech-startups-are-building-around-fragmented-data-systems/",
@@ -75,7 +77,8 @@ export default function PortfolioWebsite() {
     {
       title: "The State of Healthtech in Nigeria 2026",
       type: "Report",
-      image: "https://insights.techcabal.com/wp-content/uploads/insight/2026/05/Screenshot-2026-05-18-163706.png",
+      image:
+        "https://insights.techcabal.com/wp-content/uploads/insight/2026/05/Screenshot-2026-05-18-163706.png",
       summary:
         "A research report examining the Nigerian healthtech landscape, including market trends, stakeholder perspectives, and structured recommendations for operators, investors, and decision-makers.",
       link: "https://insights.techcabal.com/report/state-of-healthtech-in-nigeria-2026/",
@@ -83,19 +86,21 @@ export default function PortfolioWebsite() {
     },
   ];
 
-  // Data analysis projects
   const dataProjects = [
     {
       title: "Quality of Life in Children with Autism Spectrum Disorder Analysis",
-      image: "https://www.brightheart.co.uk/wp-content/uploads/2024/06/Understanding-Autism-Spectrum-Condition-ASC.jpg.webp",
+      image:
+        "https://www.brightheart.co.uk/wp-content/uploads/2024/06/Understanding-Autism-Spectrum-Condition-ASC.jpg.webp",
       summary:
         "An end-to-end analysis of quality of life in children with Autism Spectrum Disorder, covering data cleaning, exploratory analysis, and visualization to uncover patterns across interventions and outcomes.",
       link: "https://github.com/success222/QoL-Autism-Analysis",
       available: true,
     },
     {
-      title: "Assessing Vendors' Perspectives On The Ban Of Single-Use Plastics (Sups) In Alimosho, Lagos State",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRGac0qTbtI6fOcKJupIcrxDa5nXShoBX31Q&s",
+      title:
+        "Assessing Vendors' Perspectives On The Ban Of Single-Use Plastics (Sups) In Alimosho, Lagos State",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRGac0qTbtI6fOcKJupIcrxDa5nXShoBX31Q&s",
       summary:
         "Analysis of vendors’ awareness, attitudes, and adaptive responses to the ban on single-use plastics (SUPs) in Alimosho, Lagos, highlighting compliance challenges, economic impact, and policy gaps.",
       link: "",
@@ -103,27 +108,6 @@ export default function PortfolioWebsite() {
     },
   ];
 
-  // Healthcare & research works
-  const healthcareResearch = [
-    {
-      title: "Automated Detection of Pulmonary Tuberculosis From Chest X-Ray Images Using Artificial Intelligence: A Systematic Review",
-      subtitle: "Systematic Review",
-      summary:
-        "A systematic review of artificial intelligence approaches for pulmonary tuberculosis detection using chest X-ray imaging, with emphasis on modelling techniques, datasets, performance metrics, and clinical relevance in low-resource settings.",
-      link: "",
-      status: "In Progress",
-    },
-    {
-      title: "Automated Detection of Pulmonary Tuberculosis From Chest X-Ray Images Using Artificial Intelligence",
-      subtitle: "Research Thesis",
-      summary:
-        "A deep learning project focused on automated tuberculosis detection from chest X-ray images, emphasizing clinically relevant screening performance, explainability, and practical application.",
-      link: "",
-      status: "In Progress",
-    },
-  ];
-
-  // certifications
   const certifications = [
     {
       label: "Data Science Professional Certificate",
@@ -152,7 +136,6 @@ export default function PortfolioWebsite() {
     },
   ];
 
-  // skills
   const skills = {
     "ML & Modeling": [
       "Scikit-learn",
@@ -192,7 +175,6 @@ export default function PortfolioWebsite() {
     ],
   };
 
-   // Reusable image placeholder block
   const ImagePlaceholder = ({ label }: { label: string }) => (
     <div className="flex h-44 w-full items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50">
       <div className="text-center">
@@ -214,7 +196,7 @@ export default function PortfolioWebsite() {
     </div>
   );
 
-  {/* ── Summary Section ── */}
+  // ── Summary Section ──
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <section className="border-b border-slate-200 bg-white">
@@ -233,14 +215,14 @@ export default function PortfolioWebsite() {
               {/* <p className="mt-4 text-sm font-semibold text-700">
                 Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
               </p> */}
-              <div className="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              {/* <div className="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-6">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
                   My Journey
                 </p>
                 <p className="text-sm leading-7 text-slate-700">
                   With a background in healthcare and public health, I focus on solving real-world healthcare challenges — from access gaps to clinical decision support. I translate complex health problems into practical machine learning solutions that are technically sound, interpretable, and usable in real-world settings.
                 </p>
-              </div>
+              </div> */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#projects"
@@ -294,34 +276,16 @@ export default function PortfolioWebsite() {
           </div>
         </div>
       </section>
-
-      
-      {/* <section id="systems" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-            ML Systems I&apos;ve Built
-          </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            Practical machine learning systems for health-focused use cases.
-          </h2>
-          <p className="mt-4 max-w-3xl text-lg text-slate-600">
-            My strongest work sits at the intersection of machine learning, healthcare, and deployment — not just modeling experiments, but systems designed to be usable in real-world settings.
-          </p>
-        </div>
-      </section> */}
-
-      {/* ── Featured Projects ── */}
+    
+    {/* ── Featured Projects ── */}
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
             Featured Work
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            Machine learning projects that show how I build.
+            Machine learning projects
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
-            These projects show applied modeling, system thinking, deployment, and problem solving in health-focused contexts.
-          </p>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -385,116 +349,131 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      {/* ── Applied Data & Research ── */}
       <section id="experience" className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Applied Data & Research
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-              The experience behind the ML work.
-            </h2>
-            <p className="mt-4 text-lg text-slate-600">
-              Real analytical, research, and writing experience that grounds and strengthens the machine learning work.
-            </p>
-          </div>
+  <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
 
-          {/* ── TechCabal ── */}
-          <div className="mt-16">
-            <h3 className="text-xl font-bold text-slate-950">TechCabal Insights — Articles & Reports</h3>
-            <p className="mt-2 max-w-2xl text-sm text-slate-600">
-              Published healthcare-focused research and analysis covering system gaps, digital health, workforce challenges, and emerging trends in the African health ecosystem.
-            </p>
+    {/* Header */}
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+        Applied Data & Research
+      </p>
+      <p className="mt-4 text-lg text-slate-600">
+        Research and applied health analysis bridging clinical insight, data, and healthcare systems.
+      </p>
+    </div>
 
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {tcArticles.map((item) => (
-                <div
-                  key={item.title}
-                  className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-md"
+    {/* TechCabal */}
+    <div className="mt-16">
+      <h3 className="text-xl font-bold text-slate-950">
+        TechCabal Insights — Articles & Reports
+      </h3>
+
+      <p className="mt-2 max-w-2xl text-sm text-slate-600">
+        Published healthcare research and analysis on health system gaps, digital health, workforce challenges, and emerging trends in Africa’s health ecosystem.
+      </p>
+
+      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {tcArticles.map((item) => (
+          <div key={item.title} className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-md">
+            {item.image ? (
+              <img src={item.image} alt={item.title} className="h-44 w-full object-cover" />
+            ) : (
+              <div className="px-4 pt-4">
+                <ImagePlaceholder label={item.title} />
+              </div>
+            )}
+
+            <div className="flex flex-1 flex-col p-5">
+              <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
+                {item.type}
+              </span>
+
+              <h4 className="mt-2 text-base font-semibold leading-snug text-slate-950">
+                {item.title}
+              </h4>
+
+              <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">
+                {item.summary}
+              </p>
+
+              {item.link ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
                 >
-                  {item.image ? (
-                    <img src={item.image} alt={item.title} className="h-44 w-full object-cover" />
-                  ) : (
-                    <div className="px-4 pt-4">
-                      <ImagePlaceholder label={item.title} />
-                    </div>
-                  )}
-                  <div className="flex flex-1 flex-col p-5">
-                    <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
-                      {item.type}
-                    </span>
-                    <h4 className="mt-2 text-base font-semibold leading-snug text-slate-950">
-                      {item.title}
-                    </h4>
-                    <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
-                    {item.link ? (
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
-                    >
-                      Read {item.type.toLowerCase()} →
-                    </a>
-                  ) : (
-                     <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
-                      Coming Soon
-                    </span>
-                  )}
-                  </div>
-                </div>
-              ))}
+                  Read {item.type.toLowerCase()} →
+                </a>
+              ) : (
+                <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
+                  Coming Soon
+                </span>
+              )}
             </div>
           </div>
+        ))}
+      </div>
+    </div>
 
-          {/* ── Data Analysis Projects ── */}
-          <div className="mt-20">
-            <h3 className="text-xl font-bold text-slate-950">Data Analysis Projects</h3>
-            <p className="mt-2 max-w-2xl text-sm text-slate-600">
-              End-to-end analytical projects across health and behavioural datasets, with emphasis on clean methodology, interpretability, and clear communication.
-            </p>
+    {/* Data Analysis */}
+    <div className="mt-20">
+      <h3 className="text-xl font-bold text-slate-950">
+        Data Analysis Projects
+      </h3>
 
-            <div className="mt-8 grid gap-6 lg:grid-cols-2">
-              {dataProjects.map((item) => (
-                <div
-                  key={item.title}
-                  className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-md"
+      <p className="mt-2 max-w-2xl text-sm text-slate-600">
+        End-to-end analysis of health and behavioural datasets with emphasis on methodology, interpretability, and clear communication.
+      </p>
+
+      <div className="mt-8 grid gap-6 lg:grid-cols-2">
+        {dataProjects.map((item) => (
+          <div key={item.title} className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:shadow-md">
+            {item.image ? (
+              <img src={item.image} alt={item.title} className="h-52 w-full object-cover" />
+            ) : (
+              <div className="px-5 pt-5">
+                <ImagePlaceholder label={item.title} />
+              </div>
+            )}
+
+            <div className="flex flex-1 flex-col p-6">
+              <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
+                Data Analysis
+              </span>
+
+              <h4 className="mt-2 text-lg font-semibold text-slate-950">
+                {item.title}
+              </h4>
+
+              <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">
+                {item.summary}
+              </p>
+
+              {item.link ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
                 >
-                  {item.image ? (
-                    <img src={item.image} alt={item.title} className="h-52 w-full object-cover" />
-                  ) : (
-                    <div className="px-5 pt-5">
-                      <ImagePlaceholder label={item.title} />
-                    </div>
-                  )}
-                  <div className="flex flex-1 flex-col p-6">
-                    <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
-                      Data Analysis
-                    </span>
-                    <h4 className="mt-2 text-lg font-semibold text-slate-950">{item.title}</h4>
-                    <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{item.summary}</p>
-                    {item.link ? (
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-slate-900 underline underline-offset-4 transition group-hover:text-slate-600"
-                    >
-                      View project →
-                    </a>
-                    ) : (
-                      <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
-                        {item.status || "Coming Soon"}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
+                  View project →
+                </a>
+              ) : (
+                <span className="mt-5 inline-flex w-fit rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500">
+                  {item.status || "Coming Soon"}
+                </span>
+              )}
             </div>
           </div>
+        ))}
+      </div>
+    </div>
 
-          {/* ── Healthcare & Public Health Research ── */}
+  </div>
+</section>
+
+          {/* ── Healthcare & Public Health Research ──
           <div className="mt-20">
             <h3 className="text-xl font-bold text-slate-950">Healthcare & Public Health Research</h3>
             <p className="mt-2 max-w-2xl text-sm text-slate-600">
@@ -530,39 +509,43 @@ export default function PortfolioWebsite() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </div>*/}
 
       {/* ── Skills ── */}
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Skills
-              </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-                Technical capabilities.
-              </h2>
-            </div>
-            <div className="grid gap-6 sm:grid-cols-2">
-              {Object.entries(skills).map(([category, items]) => (
-                <div key={category} className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-                  <h3 className="text-lg font-semibold text-slate-950">{category}</h3>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {items.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Skills
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              Technical capabilities
+            </h2>
           </div>
+
+          <div className="mt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            {Object.entries(skills).map(([category, items]) => (
+              <div
+                key={category}
+                className="rounded-3xl border border-slate-200 bg-slate-50 p-6"
+              >
+                <h3 className="text-lg font-semibold text-slate-950">{category}</h3>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
@@ -571,7 +554,7 @@ export default function PortfolioWebsite() {
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">CV</p>
-            <h2 className="mt-3 text-2xl font-bold text-slate-950">Resume / Curriculum Vitae</h2>
+            <h2 className="mt-3 text-2xl font-bold text-slate-950">Resume</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
               Includes machine learning projects, healthcare experience, and technical skills relevant to ML engineering and health-focused applications.
             </p>
