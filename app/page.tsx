@@ -1,7 +1,7 @@
 export default function PortfolioWebsite() {
   const featuredProjects = [
     {
-      title: "Cardiometabolic Risk Prediction App",
+      title: "Cardiometabolic Risk Prediction System",
       type: "Deployed ML System",
       description:
         "A deployed machine learning application that predicts multiple cardiometabolic risk factors using non-laboratory inputs, designed to support early risk screening and preventive health decision-making.",
@@ -15,7 +15,7 @@ export default function PortfolioWebsite() {
       demoLink: "https://cardiometabolic-risk-pred.onrender.com/",
     },
     {
-      title: "Sleep Disorder Prediction App",
+      title: "Sleep Disorder Prediction System",
       type: "Deployed ML System",
       description:
         "A machine learning application that predicts sleep disorder outcomes from lifestyle and physiological features, built with a focus on practical usability and deployment-ready design.",
@@ -29,7 +29,7 @@ export default function PortfolioWebsite() {
       demoLink: "https://sleep-disorder-new.onrender.com/",
     },
     {
-      title: "ASD Screening Analysis",
+      title: "ASD Screening Model",
       type: "Machine Learning Project",
       description:
         "A predictive modeling project for autism spectrum disorder screening in children, comparing multiple machine learning approaches with a focus on performance and interpretability in healthcare contexts.",
@@ -137,7 +137,7 @@ export default function PortfolioWebsite() {
   ];
 
   const skills = {
-    "ML & Modeling": [
+    "Data Science & Machine Learning": [
       "Scikit-learn",
       "Classification (binary and multi-output)",
       "Feature engineering",
@@ -159,12 +159,14 @@ export default function PortfolioWebsite() {
       "Pandas",
       "NumPy",
       "EDA",
+      "SQL querying",
       "Data visualization",
       "Power BI",
       "Looker Studio",
       "Excel",
       "Google Sheets",
       "Flourish",
+      "Reporting",
     ],
     "Domain Focus": [
       "Healthcare AI",
@@ -202,15 +204,15 @@ export default function PortfolioWebsite() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <p className="mb-6 inline-flex rounded-full border border-slate-200 px-4 py-1 text-sm font-medium text-slate-600">
-            Healthcare Data Scientist • Machine Learning Engineer • Healthcare AI • Public Health
+            Data Science • Machine Learning • AI Systems • Healthcare & Public Health
           </p>
           <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
             <div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                Building practical AI systems for healthcare and public health
+                Building data-driven and machine learning systems for real-world healthcare applications
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-                I&apos;m Success Sotonwa, a Healthcare Data Scientist and Machine Learning Engineer focused on developing and deploying machine learning solutions for healthcare and public health applications. My work combines clinical knowledge, data science, and machine learning to support better decision-making and improve real-world health outcomes.
+                I&apos;m Success Sotonwa. I build data-driven and machine learning systems for healthcare and public health applications. My work spans data analysis, predictive modeling, and deploying machine learning solutions that support real-world healthcare decision-making. I focus on turning complex health data into usable insights and decision-support tools.
               </p>
               {/* <p className="mt-4 text-sm font-semibold text-700">
                 Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
@@ -608,7 +610,7 @@ export default function PortfolioWebsite() {
                 Let&apos;s build meaningful health-focused ML systems.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-                Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
+                Open to roles in machine learning, data science, and AI systems in healthcare and public health.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-800 bg-slate-900 p-6">
