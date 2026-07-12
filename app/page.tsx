@@ -137,43 +137,31 @@ export default function PortfolioWebsite() {
   ];
 
   const skills = {
-    "Data Science & Machine Learning": [
-      "Scikit-learn",
-      "Classification (binary and multi-output)",
+    "AI & Machine Learning": [
+      "Predictive Modelling",
+      "Supervised Learning",
       "Feature engineering",
-      "Cross-validation",
-      "Hyperparameter tuning",
-      "Model evaluation (F1-score, ROC-AUC, sensitivity, specificity)",
+      "Model evaluation",
+      "LLM Applications",
     ],
     "Deployment & Engineering": [
       "Flask",
       "Docker",
       "Render",
+      "FastAPI",
+      "REST APIs",
       "AWS",
       "Git",
-      "GitHub",
-      "ML pipeline thinking",
     ],
     "Data & Analytics": [
       "Python",
       "Pandas",
       "NumPy",
       "EDA",
-      "SQL querying",
-      "Data visualization",
+      "SQL",
+      "Visualization",
       "Power BI",
-      "Looker Studio",
       "Excel",
-      "Google Sheets",
-      "Flourish",
-      "Reporting",
-    ],
-    "Domain Focus": [
-      "Healthcare AI",
-      "Public health",
-      "Clinical decision support",
-      "Child health",
-      "Screening tools",
     ],
   };
 
@@ -204,15 +192,15 @@ export default function PortfolioWebsite() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <p className="mb-6 inline-flex rounded-full border border-slate-200 px-4 py-1 text-sm font-medium text-slate-600">
-            Data Science • Machine Learning • AI Systems • Healthcare & Public Health
+            Data Science • Machine Learning • AI Systems • Data Analytics
           </p>
           <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
             <div>
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                Building data-driven and machine learning systems for real-world healthcare applications
+                Building machine learning and AI systems from data to deployment
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-                I&apos;m Success Sotonwa. I build data-driven and machine learning systems for healthcare and public health applications. My work spans data analysis, predictive modeling, and deploying machine learning solutions that support real-world healthcare decision-making. I focus on turning complex health data into usable insights and decision-support tools.
+                I&apos;m Success Sotonwa. I build data-driven and machine learning systems, from exploratory analysis and predictive modeling to deployed AI applications. My work spans machine learning, data analytics, and AI engineering, with experience building solutions that turn complex data into practical tools.
               </p>
               {/* <p className="mt-4 text-sm font-semibold text-700">
                 Open to machine learning engineering roles and opportunities in healthcare AI, public health, and applied ML systems.
@@ -260,10 +248,10 @@ export default function PortfolioWebsite() {
               <div className="mt-4 grid gap-3">
                 {[
                   { icon: "🧠", label: "Built and deployed machine learning applications" },
-                  { icon: "🏥", label: "Clinical, healthcare, and public health background" },
-                  { icon: "📊", label: "Health data analysis, modelling, and evaluation" },
-                  { icon: "🔬", label: "Research, technical writing, and scientific communication" },
-                  { icon: "⚙️", label: "Python · Scikit-learn · Flask · Docker · SQL" },
+                  { icon: "🏥", label: "AI systems, APIs, and ML deployment workflows" },
+                  { icon: "📊", label: "Data analysis, modelling, and visualization" },
+                  { icon: "🔬", label: "Python, SQL, Scikit-learn, Flask, FastAPI" },
+                  { icon: "⚙️", label: "Healthcare domain expertise and applied ML experience" },
                 ].map((item) => (
                   <div
                     key={item.label}
@@ -286,7 +274,7 @@ export default function PortfolioWebsite() {
             Featured Work
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            Machine learning projects
+            AI & Machine learning projects
           </h2>
         </div>
 
@@ -358,9 +346,6 @@ export default function PortfolioWebsite() {
     <div className="max-w-3xl">
       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
         Applied Data & Research
-      </p>
-      <p className="mt-4 text-lg text-slate-600">
-        Research and applied health analysis bridging clinical insight, data, and healthcare systems.
       </p>
     </div>
 
@@ -522,11 +507,11 @@ export default function PortfolioWebsite() {
               Skills
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-              Technical capabilities
+              Technical skills
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))]">
             {Object.entries(skills).map(([category, items]) => (
               <div
                 key={category}
@@ -558,12 +543,12 @@ export default function PortfolioWebsite() {
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">CV</p>
             <h2 className="mt-3 text-2xl font-bold text-slate-950">Resume</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Includes machine learning projects, healthcare experience, and technical skills relevant to ML engineering and health-focused applications.
+              Includes machine learning, AI, data science, and data analytics projects, along with technical skills and real-world development experience.
             </p>
 
             {/* CV download */}
             <a
-              href="https://drive.google.com/file/d/14KlgwPIyrrA5ASFYJtSaYu8V8DkGHqpb/view?usp=drive_link"
+              href="https://drive.google.com/file/d/15YWmjUDZz892t_QnGdWBWOGYHXLGkRFI/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white"
@@ -577,7 +562,6 @@ export default function PortfolioWebsite() {
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
               Certifications & Qualifications
             </p>
-            <h2 className="mt-3 text-2xl font-bold text-slate-950">Proof of learning and training</h2>
             <div className="mt-6 space-y-3">
               {certifications.map((cert) => (
                 <a
@@ -607,10 +591,10 @@ export default function PortfolioWebsite() {
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Let&apos;s build meaningful health-focused ML systems.
+                Let&apos;s build meaningful AI and data-driven systems.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-                Open to roles in machine learning, data science, and AI systems in healthcare and public health.
+                Open to opportunities in AI engineering, machine learning, data science, and data analytics.
               </p>
             </div>
             <div className="rounded-3xl border border-slate-800 bg-slate-900 p-6">
