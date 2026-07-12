@@ -251,7 +251,7 @@ export default function PortfolioWebsite() {
                   { icon: "🏥", label: "AI systems, APIs, and ML deployment workflows" },
                   { icon: "📊", label: "Data analysis, modelling, and visualization" },
                   { icon: "🔬", label: "Python, SQL, Scikit-learn, Flask, FastAPI" },
-                  { icon: "⚙️", label: "Healthcare domain expertise and applied ML experience" },
+                  { icon: "⚙️", label: "Healthcare domain expertise" },
                 ].map((item) => (
                   <div
                     key={item.label}
