@@ -10,7 +10,7 @@ export const experiences = [
 
     team: "TechCabal Insights",
 
-    duration: "July 2025 – Present",
+    duration: "July 2025 – August 2026",
 
     summary:
       "Conduct market research and data analysis for TechCabal Insights, producing evidence-based reports and articles on healthcare and emerging technology sectors.",
