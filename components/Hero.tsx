@@ -29,7 +29,7 @@ export default function Hero() {
             </Link>
 
             <a
-              href="https://drive.google.com/file/d/1XrzzXs4A06G6ahRkI_v1J-9T9iCt9vBC/view?usp=sharing"
+              href="https://drive.google.com/file/d/1N5NIwG2Oi07_eyEu4HG3DNmmm-rl6PaU/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-slate-500 hover:bg-slate-900"
