@@ -27,15 +27,6 @@ export default function Hero() {
             >
               View Projects
             </Link>
-
-            <a
-              href="https://drive.google.com/file/d/1N5NIwG2Oi07_eyEu4HG3DNmmm-rl6PaU/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-white transition hover:border-slate-500 hover:bg-slate-900"
-            >
-              Download CV
-            </a>
           </div>
         </div>
       </div>
