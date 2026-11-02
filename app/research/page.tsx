@@ -93,15 +93,16 @@ export default function ResearchPage() {
                   {paper.publicationId}
                 </p>
 
-                <Link
-                  href={paper.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#52644f] transition hover:text-[#17231c]"
-                >
-                  View publication
-                  <span>↗</span>
-                </Link>
+                {paper.url && (
+                  <Link
+                    href={paper.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="..."
+                  >
+                    View publication
+                  </Link>
+                )}
               </div>
             )}
           </article>
