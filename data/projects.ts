@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     featured: true,
+    status: "In progress",
     slug: "research-intelligence-platform",
     title: "Research Intelligence Platform",
 
@@ -105,29 +106,32 @@ export const projects = [
     id: 4,
     featured: false,
     slug: "tb-classification",
-    title: "TB Classification",
+    title: "Tuberculosis Classification Using Deep Learning",
 
     tagline:
-      "A deep learning computer vision model for tuberculosis detection from chest X-ray images.",
+      "A comparative deep learning study of convolutional neural network architectures for tuberculosis classification from chest X-ray images.",
 
     description:
-      "A computer vision project that applies deep learning techniques to classify chest X-ray images for tuberculosis screening.",
+      "A medical image classification project investigating deep learning approaches for tuberculosis screening using chest X-ray images. The project compares multiple CNN architectures to evaluate their performance in distinguishing tuberculosis-positive and normal chest X-ray images.",
 
     overview:
-      "This project investigates the application of convolutional neural networks to assist in tuberculosis screening using chest radiographs. It demonstrates the complete deep learning workflow from data preparation and model training to evaluation and performance analysis.",
+      "This project explores the application of deep learning to tuberculosis classification from chest radiographs. It involves developing and comparing five models: a baseline CNN, an optimised CNN, ResNet50, DenseNet121, and MobileNetV2.",
 
     approach:
-      "Developed and evaluated convolutional neural network models for tuberculosis screening from chest X-ray images, including preprocessing, augmentation, training, and performance evaluation.",
+      "Implemented a comparative deep learning workflow involving image preprocessing, data augmentation, model development, training, and evaluation. The study examines both custom CNN architectures and established transfer learning architectures to assess their suitability for tuberculosis classification.",
 
     tech: [
       "Python",
       "TensorFlow",
       "Keras",
       "CNN",
+      "ResNet50",
+      "DenseNet121",
+      "MobileNetV2",
     ],
 
     outcome:
-      "Built a complete deep learning pipeline for medical image classification, providing a foundation for future explainable AI, larger-scale validation, and deployment.",
+      "Developed and evaluated five deep learning models for tuberculosis classification, providing a comparative assessment of different CNN architectures for medical image analysis.",
 
     github: "https://github.com/success222/tb-classification",
 
@@ -136,6 +140,37 @@ export const projects = [
 
   {
     id: 5,
+    featured: false,
+    slug: "weather-app",
+    title: "Weather App",
+    tagline: "A full-stack application for retrieving, managing, and exploring weather information.",
+    description:
+      "A full-stack weather application that integrates external weather and geocoding APIs with a PostgreSQL database. Users can retrieve current weather and forecasts, save and manage weather records, export data, and discover videos related to selected locations.",
+    overview:
+      "The application provides weather information for searched locations and the user's current browser location. It supports multiple forecast durations, custom forecast start dates, saved weather records, and location-related video discovery.",
+    approach:
+      "Built with a FastAPI backend and React frontend. The backend handles weather retrieval, location processing, validation, database persistence, CRUD operations, and data exports. External APIs provide weather, geocoding, and YouTube video data.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "React",
+      "JavaScript",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Pydantic",
+      "HTTPX",
+      "Alembic",
+      "Pytest",
+      "Vite",
+    ],
+    outcome:
+      "Implemented current weather retrieval, 3–10-day forecasts, browser geolocation, saved weather record management, JSON and CSV exports, and location-related YouTube video discovery. Automated tests cover reverse-geocoding behavior, and the application has undergone end-to-end manual testing.",
+    github: "https://github.com/success222/weather-app",
+    demo: null,
+  },
+
+  {
+    id: 6,
 
     slug: "sleep-disorder-prediction",
 
@@ -169,7 +204,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
 
     slug: "asd-screening-model",
 
@@ -203,7 +238,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
 
     slug: "autism-quality-of-life-analysis",
 

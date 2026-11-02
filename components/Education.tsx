@@ -1,80 +1,127 @@
 import Link from "next/link";
 
-const credentials = [
+const qualifications = [
+  {
+    title: "Master of Public Health (MPH)",
+    issuer: "Lagos State University College of Medicine (LASUCOM)",
+    status: "In progress",
+    category: "Education",
+  },
   {
     title: "Bachelor of Nursing Science (BNSc)",
     issuer: "Bowen University, Iwo",
     link: "https://drive.google.com/file/d/1HtZCLpxI_YtGlEj9Z8SH1EdfI8oPXy1e/view?usp=drive_link",
+    category: "Education",
+  },
+  {
+    title: "Registered Nurse (RN)",
+    issuer: "Nursing and Midwifery Council of Nigeria",
+    link: "https://drive.google.com/file/d/1WcoGJSNFakJ0fMdzd3Xe9gLJOHAyxJgl/view?usp=drive_link",
+    category: "Professional Qualifications",
+  },
+  {
+    title: "Registered Midwife (RM)",
+    issuer: "Nursing and Midwifery Council of Nigeria",
+    link: "https://drive.google.com/file/d/1olJs3JkmweaRGDgg44XZIBOS3wBeZJd2/view?usp=drive_link",
+    category: "Professional Qualifications",
   },
   {
     title: "Machine Learning Specialization",
     issuer: "DeepLearning.AI & Stanford University",
-    link: "#",
-  },
-  {
-    title: "Registered Nurse (RN)",
-    issuer: "Nursing & Midwifery Council of Nigeria",
-    link: "https://drive.google.com/file/d/1WcoGJSNFakJ0fMdzd3Xe9gLJOHAyxJgl/view?usp=drive_link",
+    category: "Certifications",
   },
   {
     title: "Data Science Professional Certificate",
     issuer: "IBM",
-    link: "#",
-  },
-  {
-    title: "Registered Midwife (RM)",
-    issuer: "Nursing & Midwifery Council of Nigeria",
-    link: "https://drive.google.com/file/d/1olJs3JkmweaRGDgg44XZIBOS3wBeZJd2/view?usp=drive_link",
+    category: "Certifications",
   },
   {
     title: "Data Analyst Professional Certificate",
     issuer: "IBM",
     link: "https://www.coursera.org/account/accomplishments/specialization/certificate/P88FD2F4DHHI",
+    category: "Certifications",
   },
+];
+
+const categoryOrder = [
+  "Education",
+  "Professional Qualifications",
+  "Certifications",
 ];
 
 export default function Education() {
   return (
-    <section
-      id="education"
-      className="bg-slate-50 py-20"
-    >
+    <section id="education" className="bg-[#f4f2e9] py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
-            Credentials
+        <div className="mb-14">
+          <p className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-[#687268]">
+            Academic & Professional Background
           </p>
 
-          <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900">
-            Education & Certifications
+          <h2 className="max-w-xl text-4xl font-bold tracking-tight text-[#17231c] md:text-4xl">
+            Education & Qualifications
           </h2>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
-          {credentials.map((item) => (
-            <div
-              key={item.title}
-              className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-5 py-4 transition-colors duration-300 hover:border-slate-300"
-            >
-              <div className="min-w-0 pr-4">
-                <h3 className="text-base font-semibold leading-snug text-slate-900">
-                  {item.title}
-                </h3>
+        <div className="space-y-12">
+          {categoryOrder.map((category, categoryIndex) => {
+            const items = qualifications.filter(
+              (item) => item.category === category
+            );
 
-                <p className="mt-1 text-sm text-slate-500">
-                  {item.issuer}
-                </p>
+            return (
+              <div key={category}>
+                <div className="mb-5 flex items-center gap-4">
+                  <h3 className="text-lg font-bold text-[#17231c]">
+                    {category}
+                  </h3>
+
+                  <span className="font-mono text-xs text-[#9a9f91]">
+                    {String(categoryIndex + 1).padStart(2, "0")}
+                  </span>
+
+                  <div className="h-px flex-1 bg-[#d7dbce]" />
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  {items.map((item) => (
+                    <article
+                      key={item.title}
+                      className="flex min-h-[150px] items-center justify-between gap-5 rounded-2xl border border-[#d7dbce] bg-[#fffef8] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#17231c]/40 hover:shadow-lg hover:shadow-[#17231c]/5"
+                    >
+                      <div className="min-w-0">
+                        <h4 className="text-lg font-bold leading-snug text-[#17231c]">
+                          {item.title}
+                        </h4>
+
+                        <p className="mt-2 text-sm leading-6 text-[#687268]">
+                          {item.issuer}
+                        </p>
+
+                        {"status" in item && (
+                          <span className="mt-3 inline-flex rounded-full border border-[#b9c9a5] bg-[#edf2e5] px-3 py-1 text-xs font-medium text-[#40583b]">
+                            {item.status}
+                          </span>
+                        )}
+                      </div>
+
+                      {item.link && (
+                        <Link
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 inline-flex items-center gap-2 text-sm font-semibold text-[#52644f] transition hover:text-[#17231c]"
+                        >
+                          View
+                          <span>↗</span>
+                        </Link>
+                      )}
+                    </article>
+                  ))}
+                </div>
               </div>
-
-              <Link
-                href={item.link}
-                target="_blank"
-                className="shrink-0 rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
-              >
-                View
-              </Link>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

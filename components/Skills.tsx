@@ -2,26 +2,14 @@ const skillCategories = [
   {
     title: "Machine Learning & AI",
     skills: [
+      "Python",
       "Scikit-learn",
       "TensorFlow",
       "Computer Vision",
       "LLMs",
       "Prompt Engineering",
-      "XGBoost",
       "Feature Engineering",
       "Model Evaluation",
-    ],
-  },
-  {
-    title: "Data Science",
-    skills: [
-      "Python",
-      "SQL",
-      "Pandas",
-      "NumPy",
-      "Data Visualization",
-      "Exploratory Data Analysis",
-      "Statistical Analysis",
     ],
   },
   {
@@ -36,7 +24,18 @@ const skillCategories = [
     ],
   },
   {
-    title: "Frontend",
+    title: "Data Science",
+    skills: [
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Data Visualization",
+      "Exploratory Data Analysis",
+      "Statistical Analysis",
+    ],
+  },
+  {
+    title: "Frontend Development",
     skills: [
       "Next.js",
       "React",
@@ -45,7 +44,7 @@ const skillCategories = [
     ],
   },
   {
-    title: "Tools",
+    title: "Tools & Development",
     skills: [
       "Git",
       "GitHub",
@@ -57,7 +56,6 @@ const skillCategories = [
   {
     title: "Cloud & Deployment",
     skills: [
-      "Docker",
       "Render",
       "GitHub Actions",
       "AWS",
@@ -68,22 +66,38 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white py-20">
+    <section
+      id="skills"
+      className="bg-[#e9eadf] py-24"
+    >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
-            Skills
-          </p>
+        <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <p className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-[#687268]">
+              Technical Toolkit
+            </p>
 
-          <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900">
-            Technologies & Expertise
-          </h2>
+            <h2 className="max-w-xl text-4xl font-bold tracking-tight text-[#17231c] md:text-4xl">
+              Technologies & Expertise
+            </h2>
+          </div>
         </div>
 
-        <div className="grid gap-x-12 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {skillCategories.map((category) => (
-            <div key={category.title}>
-              <h3 className="mb-4 text-lg font-semibold text-slate-900">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {skillCategories.map((category, index) => (
+            <div
+              key={category.title}
+              className="rounded-2xl border border-[#d7dbce] bg-[#fffef8] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#17231c]/40 hover:shadow-lg hover:shadow-[#17231c]/5"
+            >
+              <div className="mb-7 flex items-center justify-between">
+                <span className="font-mono text-xs tracking-widest text-[#9a9f91]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <span className="h-2 w-2 rounded-full bg-[#d5f36a]" />
+              </div>
+
+              <h3 className="mb-5 text-xl font-bold tracking-tight text-[#17231c]">
                 {category.title}
               </h3>
 
@@ -91,7 +105,7 @@ export default function Skills() {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700 transition hover:bg-slate-100"
+                    className="rounded-full border border-[#d7dbce] bg-[#f4f2e9] px-3 py-2 text-xs font-medium text-[#52644f] transition-colors hover:border-[#17231c]/40 hover:bg-[#e9eadf]"
                   >
                     {skill}
                   </span>

@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { projects } from "@/data/projects";
 
 type Props = {
@@ -17,81 +18,141 @@ export default async function ProjectPage({ params }: Props) {
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-20">
-      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">
-        Project
-      </p>
-
-      <h1 className="mt-3 text-5xl font-bold tracking-tight text-slate-900">
-        {project.title}
-      </h1>
-
-      <p className="mt-5 text-xl leading-8 text-slate-600">
-        {project.tagline}
-      </p>
-
-      <div className="mt-8 flex flex-wrap gap-2">
-        {project.tech.map((tech) => (
-          <span
-            key={tech}
-            className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm font-medium text-slate-700"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-
-      <div className="mt-10 flex flex-wrap gap-4">
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-lg border border-slate-300 px-5 py-2 font-medium text-slate-700 transition hover:bg-slate-100"
+    <main className="min-h-screen bg-[#f4f2e9]">
+      <div className="mx-auto max-w-5xl px-6 pb-24 pt-20">
+        <Link
+          href="/projects"
+          className="fixed left-[max(1.5rem,calc((100vw-64rem)/2+1.5rem))] top-24 z-40 inline-flex items-center gap-2 rounded-full border border-[#d7dbce] bg-[#fffef8]/95 px-4 py-2 text-sm font-medium text-[#687268] shadow-sm backdrop-blur-md transition hover:border-[#17231c] hover:text-[#17231c]"
         >
-          GitHub Repository
-        </a>
+          ← All Projects
+        </Link>
 
-        {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-slate-900 px-5 py-2 font-medium text-white transition hover:bg-slate-800"
+        <header className="border-b border-[#d7dbce] pb-12">
+          <p className="mb-5 font-mono text-xs uppercase tracking-[0.2em] text-[#687268]">
+            Project Details
+          </p>
+
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-[#17231c] md:text-4xl">
+              {project.title}
+            </h1>
+
+            {"status" in project && project.status && (
+              <span className="rounded-full border border-[#b9c9a5] bg-[#edf2e5] px-4 py-2 text-xs font-medium text-[#40583b]">
+                {project.status}
+              </span>
+            )}
+          </div>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#687268]">
+            {project.tagline}
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#17231c] px-6 py-3 text-sm font-semibold text-[#fffef8] transition hover:bg-[#52644f]"
+              >
+                GitHub Repository
+                <span>↗</span>
+              </a>
+            )}
+
+            {project.demo && (
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-[#d7dbce] bg-[#fffef8] px-6 py-3 text-sm font-semibold text-[#17231c] transition hover:border-[#17231c]"
+              >
+                Live Demo
+                <span>↗</span>
+              </a>
+            )}
+          </div>
+        </header>
+
+        <section className="border-b border-[#d7dbce] py-10">
+          <div className="mb-6 flex items-center justify-between">
+            <h2 className="text-xl font-bold text-[#17231c]">
+              Technologies Used
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {project.tech.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-[#d7dbce] bg-[#fffef8] px-4 py-2 text-sm font-medium text-[#52644f]"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <div className="space-y-0">
+          <Section
+            number="01"
+            title="Overview"
+            content={project.overview}
+          />
+
+          <Section
+            number="02"
+            title="Approach"
+            content={project.approach}
+          />
+
+          <Section
+            number="03"
+            title="Outcome"
+            content={project.outcome}
+          />
+        </div>
+
+        <div className="mt-16 border-t border-[#d7dbce] pt-8">
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#52644f] transition hover:text-[#17231c]"
           >
-            Live Demo
-          </a>
-        )}
-      </div>
-
-      <div className="mt-16 space-y-12">
-        <Section title="Overview" content={project.overview} />
-
-        <Section title="Approach" content={project.approach} />
-
-        <Section title="Outcome" content={project.outcome} />
+            ← Explore more projects
+          </Link>
+        </div>
       </div>
     </main>
   );
 }
 
 function Section({
+  number,
   title,
   content,
 }: {
+  number: string;
   title: string;
   content: string;
 }) {
-  if (!content.trim()) return null;
+  if (!content?.trim()) return null;
 
   return (
-    <section className="border-t border-slate-200 pt-10">
-      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-        {title}
-      </h2>
+    <section className="grid gap-5 border-b border-[#d7dbce] py-12 md:grid-cols-[100px_1fr] md:gap-10">
+      <span className="font-mono text-xs tracking-widest text-[#9a9f91]">
+        {number}
+      </span>
 
-      <p className="mt-5 whitespace-pre-line leading-8 text-slate-600">
-        {content}
-      </p>
+      <div>
+        <h2 className="text-2xl font-bold tracking-tight text-[#17231c] md:text-3xl">
+          {title}
+        </h2>
+
+        <p className="mt-5 max-w-3xl whitespace-pre-line text-base leading-8 text-[#687268]">
+          {content}
+        </p>
+      </div>
     </section>
   );
 }
