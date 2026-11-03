@@ -25,6 +25,12 @@ const qualifications = [
     link: "https://drive.google.com/file/d/1olJs3JkmweaRGDgg44XZIBOS3wBeZJd2/view?usp=drive_link",
     category: "Professional Qualifications",
   },
+    {
+    title: "Certificate in Artificial Intelligence and Data Science",
+    issuer: "DATICAN (DS-I Africa)",
+    link: "https://drive.google.com/file/d/1qEHrfCrIy5DQxPY9_k7xt6lW4MhBospT/view?usp=sharing",
+    category: "Certifications",
+  },
   {
     title: "Machine Learning Specialization",
     issuer: "DeepLearning.AI & Stanford University",
