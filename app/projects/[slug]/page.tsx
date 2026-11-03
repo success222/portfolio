@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { projects } from "@/data/projects";
 
 type Props = {
@@ -16,6 +17,8 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) {
     notFound();
   }
+
+  const media = "media" in project ? project.media : undefined;
 
   return (
     <main className="min-h-screen bg-[#f4f2e9]">
@@ -74,6 +77,66 @@ export default async function ProjectPage({ params }: Props) {
             )}
           </div>
         </header>
+
+        {/* Project Media */}
+        {media && (
+          (media.screenshots.length > 0 || media.video) && (
+            <section className="border-b border-[#d7dbce] py-12">
+              <div className="mb-8">
+                <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-[#687268]">
+                  Visual Showcase
+                </p>
+
+                <h2 className="text-2xl font-bold tracking-tight text-[#17231c] md:text-3xl">
+                  Project Preview
+                </h2>
+              </div>
+
+              {media.video && (
+                <div className="mb-10">
+                  <h3 className="mb-4 text-lg font-semibold text-[#17231c]">
+                    Demo Video
+                  </h3>
+
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full rounded-2xl border border-[#d7dbce] bg-black shadow-sm"
+                  >
+                    <source src={media.video} type="video/mp4" />
+                    Your browser does not support video playback.
+                  </video>
+                </div>
+              )}
+
+              {media.screenshots.length > 0 && (
+                <div>
+                  <h3 className="mb-4 text-lg font-semibold text-[#17231c]">
+                    Screenshots
+                  </h3>
+
+                  <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+                    {media.screenshots.map((src, index) => (
+                      <div
+                        key={src}
+                        className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-[#d7dbce] bg-[#fffef8]"
+                      >
+                        <Image
+                          src={src}
+                          alt={`${project.title} screenshot ${index + 1}`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-contain"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+          )
+        )}
 
         <section className="border-b border-[#d7dbce] py-10">
           <div className="mb-6 flex items-center justify-between">

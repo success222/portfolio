@@ -37,6 +37,46 @@ export const projects = [
 
   {
     id: 2,
+    featured: false,
+    slug: "weather-app",
+    title: "Weather App",
+    tagline: "A full-stack application for retrieving, managing, and exploring weather information.",
+    description:
+      "A full-stack weather application that integrates external weather and geocoding APIs with a PostgreSQL database. Users can retrieve current weather and forecasts, save and manage weather records, export data, and discover videos related to selected locations.",
+    overview:
+      "The application provides weather information for searched locations and the user's current browser location. It supports multiple forecast durations, custom forecast start dates, saved weather records, and location-related video discovery.",
+    approach:
+      "Built with a FastAPI backend and React frontend. The backend handles weather retrieval, location processing, validation, database persistence, CRUD operations, and data exports. External APIs provide weather, geocoding, and YouTube video data.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "React",
+      "JavaScript",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Pydantic",
+      "HTTPX",
+      "Alembic",
+      "Pytest",
+      "Vite",
+    ],
+    outcome:
+      "Implemented current weather retrieval, 3–10-day forecasts, browser geolocation, saved weather record management, JSON and CSV exports, and location-related YouTube video discovery. Automated tests cover reverse-geocoding behavior, and the application has undergone end-to-end manual testing.",
+    github: "https://github.com/success222/weather-app",
+    demo: null,
+
+    media: {
+      thumbnail: "/images/projects/weather-app/interface.png",
+      screenshots: [
+        "/images/projects/weather-app/interface.png",
+        "/images/projects/weather-app/forecast.png",
+      ],
+      video: "/videos/weather-app-demo.mp4",
+    },
+  },
+
+  {
+    id: 3,
     featured: true,
     slug: "vehicle-health-assistant",
     title: "Vehicle Health Assistant",
@@ -70,7 +110,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     featured: false,
     slug: "cardiometabolic-risk-prediction",
     title: "Cardiometabolic Risk Prediction",
@@ -100,10 +140,19 @@ export const projects = [
     github: "https://github.com/success222/cardiometabolic-risk-pred",
 
     demo: "https://cardiometabolic-risk-pred.onrender.com/",
+
+    media: {
+      thumbnail: "/images/projects/cardiometabolic/interface.png",
+      screenshots: [
+        "/images/projects/cardiometabolic/interface.png",
+        "/images/projects/cardiometabolic/result.png",
+      ],
+      video: "/videos/CBM.mp4",
+    },
   },
 
   {
-    id: 4,
+    id: 5,
     featured: false,
     slug: "tb-classification",
     title: "Tuberculosis Classification Using Deep Learning",
@@ -136,38 +185,19 @@ export const projects = [
     github: "https://github.com/success222/tb-classification",
 
     demo: null,
+
+    media: {
+      thumbnail: "/images/projects/tb-classification/confusion-matrix.png",
+      screenshots: [
+        "/images/projects/tb-classification/training-accuracy.png",
+        "/images/projects/tb-classification/training-loss.png",
+        "/images/projects/tb-classification/confusion-matrix.png",
+        "/images/projects/tb-classification/roc-curve.png",
+      ],
+    },
   },
 
-  {
-    id: 5,
-    featured: false,
-    slug: "weather-app",
-    title: "Weather App",
-    tagline: "A full-stack application for retrieving, managing, and exploring weather information.",
-    description:
-      "A full-stack weather application that integrates external weather and geocoding APIs with a PostgreSQL database. Users can retrieve current weather and forecasts, save and manage weather records, export data, and discover videos related to selected locations.",
-    overview:
-      "The application provides weather information for searched locations and the user's current browser location. It supports multiple forecast durations, custom forecast start dates, saved weather records, and location-related video discovery.",
-    approach:
-      "Built with a FastAPI backend and React frontend. The backend handles weather retrieval, location processing, validation, database persistence, CRUD operations, and data exports. External APIs provide weather, geocoding, and YouTube video data.",
-    tech: [
-      "Python",
-      "FastAPI",
-      "React",
-      "JavaScript",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Pydantic",
-      "HTTPX",
-      "Alembic",
-      "Pytest",
-      "Vite",
-    ],
-    outcome:
-      "Implemented current weather retrieval, 3–10-day forecasts, browser geolocation, saved weather record management, JSON and CSV exports, and location-related YouTube video discovery. Automated tests cover reverse-geocoding behavior, and the application has undergone end-to-end manual testing.",
-    github: "https://github.com/success222/weather-app",
-    demo: null,
-  },
+  
 
   {
     id: 6,
@@ -201,6 +231,15 @@ export const projects = [
     github: "https://github.com/success222/Sleep-Disorder-New",
 
     demo: "https://sleep-disorder-new.onrender.com/",
+
+    media: {
+      thumbnail: "/images/projects/sleep-disorder/interface.png",
+      screenshots: [
+        "/images/projects/sleep-disorder/interface.png",
+        "/images/projects/sleep-disorder/prediction.png",
+      ],
+      video: "/videos/sleep-disorder-video.mp4",
+    },
   },
 
   {
@@ -235,6 +274,14 @@ export const projects = [
       "https://github.com/success222/ASD-Prediction-in-Children/tree/main",
 
     demo: null,
+
+    media: {
+      thumbnail: "/images/projects/ASD/ASD-AUCROC.png",
+      screenshots: [
+        "/images/projects/ASD/ASD-heatmap.png",
+        "/images/projects/ASD/ASD-AUCROC.png",
+      ],
+    },
   },
 
   {
@@ -269,5 +316,14 @@ export const projects = [
       "https://github.com/success222/QoL-Autism-Analysis",
 
     demo: null,
+
+    media: {
+      thumbnail: "/images/projects/qol-analysis/QoL-Comparison.png",
+      screenshots: [
+        "/images/projects/qol-analysis/QoL-Comparison.png",
+        "/images/projects/qol-analysis/QoL_box_plots.png",
+        "/images/projects/qol-analysis/QoL-interventions_comparison.png",
+      ],
+    },
   },
 ];
